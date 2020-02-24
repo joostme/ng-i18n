@@ -32,7 +32,7 @@ Diese Informationen werden beim Extrahieren hinzugefügt. Wird eine ID angegeben
 ```ts
 export enum Colors {
     Blue = 'BLUE',
-    Red = 'RED
+    Red = 'RED'
 }
 
 @Component()
