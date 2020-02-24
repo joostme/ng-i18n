@@ -31,7 +31,7 @@ Diese Informationen werden beim Extrahieren hinzugefügt. Wird eine ID angegeben
 
 ```ts
 export enum Colors {
-	Blue = 'BLUE',
+    Blue = 'BLUE',
     Red = 'RED
 }
 
@@ -107,16 +107,16 @@ In der `angular.json` der App eine `i18n` Konfiguration hinzufügen:
 
 ```json
 {
-	"projects": {
-	"app": {
-	    "i18n": {
-			"sourceLocale": "en", 
-			"locales": {
-				"de": "locale/messages.de.xlf" 
-			}
-		}
-	    }
-	}
+    "projects": {
+        "app": {
+            "i18n": {
+                "sourceLocale": "en", 
+                "locales": {
+                	"de": "locale/messages.de.xlf" 
+                }
+            }
+        }
+    }
 }
 
 ```
@@ -136,7 +136,6 @@ Um beim `ng serve` eine andere Sprache zu nutzen, als die angegebene `sourceLoca
 
 ```json
 {
-    ...
     "build": {
         "configurations": {
             "de": {
@@ -151,7 +150,6 @@ Um beim `ng serve` eine andere Sprache zu nutzen, als die angegebene `sourceLoca
             }
         }
     }
-    ...
 }
 ```
 
@@ -225,7 +223,7 @@ Mit dieser ID muss dann **manuell** ein Eintrag in die Übersetzungdatei `messag
 
 ```xml
 <trans-unit id="2463265708606399074">
-	<source>Translate me</source>
+    <source>Translate me</source>
 </trans-unit>
 ```
 
@@ -245,7 +243,7 @@ Um diese Variablen in der Übersetzungsdatei korrekt zu übernehmen, wird ein `<
 
 ```xml
 <trans-unit id="2463265708606399074">
-	<source>Translate me <x id="PH"/></source>
+    <source>Translate me <x id="PH"/></source>
 </trans-unit>
 ```
 
@@ -265,7 +263,7 @@ Mithilfe dieser Informationen kann dann ein Eintrag in die Übersetzungsdatei er
 
 ```xml
 <trans-unit id="ID">
-	<source>Translate me <x id="placeholderId" /></source>
+    <source>Translate me <x id="placeholderId" /></source>
     <note priority="1" from="description">Short Description</note>
 </trans-unit>
 ```
