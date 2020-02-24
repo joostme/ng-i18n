@@ -107,23 +107,22 @@ In der `angular.json` der App eine `i18n` Konfiguration hinzufügen:
 
 ```json
 {
-    ...
 	"projects": {
-        "app": {
-            ...
-            "i18n": {
-        		"sourceLocale": "en", // Sprache, die während der Entwicklung im Template genutzt wird
-        		"locales": {
-          			"de": "locale/messages.de.xlf" // Zielsprache und die Übersetzungsdatei
-        		}
-      		}
-            ...
-        }
+	"app": {
+	    "i18n": {
+			"sourceLocale": "en", 
+			"locales": {
+				"de": "locale/messages.de.xlf" 
+			}
+		}
+	    }
 	}
-    ...
 }
 
 ```
+
+`sourceLocale` ist die Sprache, die während der Entwicklung im Template genutzt wird.
+`locales` sind die Zielsprachen und ihre Übersetzungsdateien. Die Bezeichnet der Zielsprachen werden später im Build als Ordner für die jeweilige Sprache genutzt.
 
 Um einen mehrsprachigen Build für alle angegebenen Sprachen durchzuführen, folgenden Befehl ausführen:
 
