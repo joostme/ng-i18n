@@ -37,7 +37,7 @@ export enum Colors {
 
 @Component()
 export class AppComponent {
-	minutes = Math.floor(Math.random() * 10);
+    minutes = Math.floor(Math.random() * 10);
     color = Math.random() > 0.5 ? Colors.Blue : Colors.Red;
 }
 ```
