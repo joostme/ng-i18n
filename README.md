@@ -1,7 +1,3 @@
----
-title: "Angular i18n"
-tags: ""
----
 # Angular i18n
 
 ## Installation
